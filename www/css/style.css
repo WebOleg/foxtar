@@ -1,0 +1,296 @@
+
+/* container */
+
+.container{
+  width: 1164px;
+  padding: 0 5px;
+  margin: 0 auto;
+}
+
+/* container */
+
+/* header */
+
+/* header-top */
+
+.header-top{
+  padding-top: 30px;
+  padding-bottom: 25px;
+}
+
+.header-top .header-top-left{
+  display: flex;
+}
+
+.header-top .container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-top .header-top-right{
+  display: flex;
+}
+
+.header-top i{
+  position: relative;
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border-radius: 50%;
+  height: 34px;
+  width: 34px;
+  text-align: center;
+  line-height: 34px;
+}
+
+.header-top i span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 11px;
+  border-radius: 50%;
+  background-color: #fcb322;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  transform: translate(40%, -40%)
+}
+
+.header-top .header-top-left{
+  display: flex;
+  align-items: center;
+}
+
+.header-top .header-top-left p{
+  color: #546e7a;
+  margin-left: 245px;
+}
+
+.header-top .header-top-left p .need-help{
+  font-size: 15px;
+  color: #e74c3c;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+
+.header-top .dropdown{
+  display: none;
+}
+
+.header-top .dropdown .item-dropdown{
+  width: 269px;
+  height: 93px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dropdown-hover:hover .dropdown{
+  display: block;
+}
+
+.item-dropdown{
+  display: flex;
+  align-items: center;
+}
+
+.item-dropdown .circle-item{
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: #d4d4d4;
+  margin-bottom: 26px;
+  margin-top: 16px;
+ /*  margin-left: 21px; */
+}
+
+.circle-item{
+  margin-left: 21px;
+}
+
+.item-dropdown .item-dropdown-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.item-dropdown a{
+  font-size: 14px;
+  text-align: center;
+  color: #b0bec5;
+}
+
+.item-dropdown .item-dropdown-text{
+  margin-left: 17px;
+  margin-right: 54px;
+}
+
+.item-dropdown .name{
+  margin-bottom: 7px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #263238;
+  font-size: 12px;
+}
+
+.item-dropdown .need-wp-help{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #84b743;
+}
+
+.item-dropdown .data{
+  /* margin-bottom: 21px; */
+  margin-top: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  color: #707070;
+}
+
+.item-dropdown a:hover{
+  color: #ef6c00;
+}
+
+.header-top i{
+  margin-left: 10px;
+}
+/* header-top end */
+
+.shop .circle-item{
+  border-radius: 0;
+  width: 70px;
+}
+
+.shop .data{
+  font-size: 16px;
+  color: #000000;
+}
+
+.mik-hussy{
+  display: flex;
+  align-items: center;
+}
+
+.mik-hussy .circle-item{
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  background-color: #d4d4d4;
+}
+
+.mik-hussy .mik-hussy-right{
+  display: flex;
+  flex-direction: column;
+  margin-left: 14px;
+}
+
+.mik-hussy .btn{
+  padding: 10px 20px;
+  border-radius: 6px;
+  background-color: #e74c3c;
+  text-decoration: none;
+  color: #fff;
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  margin-left: 30px;
+}
+
+.mik-hussy .btn:hover{
+  background-color: #d4d4d4;
+  color: #84b743;
+}
+
+.mik-hussy .mik-hussy-right span{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  color: #222222;
+  font-size: 14px;
+}
+
+.mik-hussy .mik-hussy-right .mik-hussy-price{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  color: #8bc34a;
+  margin-top: 5px;
+}
+
+.mik-hussy .angle-down{
+  margin-left: 11px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #707070;
+}
+
+.mik-hussy .item-dropdown-mik-hussy{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+  padding-left: 15px;
+  padding-top: 18px;
+  padding-bottom: 30px;
+  padding-right: 39px;
+  border: none;
+  outline: 1px solid #d5d5d5;
+}
+
+.mik-hussy .item-dropdown-mik-hussy .angle-right{
+  font-size: 14px;
+  color: #8bc34a;
+}
+
+.mik-hussy .item-dropdown-mik-hussy .angle-right:hover{
+  color: #d4d4d4;
+}
+
+.mik-hussy .item-dropdown-mik-hussy .angle-right span{
+  font-size: 12px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #546e7a;
+  margin-left: 9px;
+}
+
+.mik-hussy .item-dropdown-mik-hussy .angle-right span:hover{
+  color: #8bc34a;
+}
+
+.mik-hussy .dropdown .item-dropdown{
+  width: 155px;
+  height: auto;
+}
+
+.item-dropdown-mik-hussy a + a{
+  margin-top: 24px;
+}
+
+/* header-middle */
+
+.header-middle{
+  background-color: #263238;
+  width: 100%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: start;    
+}
+
+.header-middle .container a{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.header-middle .container a:hover{
+  color: #8bc34a;
+}
+
+.header-middle .container a + a{
+  margin-left: 30px;
+}
+
+/* header-middle end */

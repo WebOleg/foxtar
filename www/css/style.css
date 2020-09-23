@@ -337,3 +337,65 @@ header .btn:hover{
 }
 
 /* header-middle end */
+
+
+/* main start*/
+main{
+  padding: 48px 0 143px;
+  background-color: #f4f6f5;
+}
+
+.page-inner{
+  margin-top: 43px;
+  background-color: #fff;
+  border: 1px solid #dedede;
+}
+
+.page-name{
+  padding: 21px 33px 26px; 
+  font-size: 24px;
+  font-weight: 500;
+  font-family: 'Roboto';
+  color: #63238;
+  border-bottom: 1px solid #dedede;
+}
+
+.page-content{
+  padding: 35px 35px 80px 42px;
+}
+
+.sales-table{
+  width: 100%;
+}
+
+.sales-table th{
+  background-color: #455a64;
+  color: #fff;
+}
+
+.sales-table tr {
+  border-bottom: 1px solid #000;
+}
+
+.sales-table tr:nth-child(even){
+  background-color: #fbfbfb;
+}
+
+.sales-table tr:last-child{
+  border-bottom: none;
+}
+
+.sales-table td:nth-child(1){
+  text-align: center;
+}
+
+.sales-table td:nth-child(2){
+
+}
+
+td{
+  border: 1px solid black;
+}
+
+
+

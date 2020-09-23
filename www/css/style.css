@@ -30,6 +30,7 @@
 
 .header-top .header-top-right{
   display: flex;
+  align-items: center;
 }
 
 .header-top i{
@@ -43,18 +44,7 @@
   line-height: 34px;
 }
 
-.header-top i span{
-  position: absolute;
-  right: 0;
-  top: 0;
-  font-size: 11px;
-  border-radius: 50%;
-  background-color: #fcb322;
-  height: 18px;
-  width: 18px;
-  line-height: 18px;
-  transform: translate(40%, -40%)
-}
+
 
 .header-top .header-top-left{
   display: flex;
@@ -73,18 +63,77 @@
   font-weight: 400;
 }
 
+.header-top i span{
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 11px;
+  color: #fff;
+  border-radius: 50%;
+  background-color: #fcb322;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  transform: translate(40%, -40%)
+}
+
+.header-top .letters > i span{
+  background-color: #ef6c00;
+}
+
+.header-top .shop > i span{
+  background-color: #95c85a;
+}
+
+
 .header-top .dropdown{
   display: none;
 }
 
 .header-top .dropdown .item-dropdown{
-  width: 269px;
-  height: 93px;
+  width: 267px;
+  /*height: 93px; */
+  padding: 21px 30px 21px 21px;
   border-bottom: 1px solid #e0e0e0;
 }
 
+.header-top .dropdown .item-dropdown:last-child{
+  border-bottom:  none;
+}
+
+
+.dropdown-hover{
+  position: relative;
+  margin-left: 15px;
+  color: #a0a0a0;
+}
+
+.dropdown-hover:hover{
+  color:  #263238;
+}
+
+.dropdown-hover::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  top: 20px;
+  z-index: 0;
+}
+
+
 .dropdown-hover:hover .dropdown{
   display: block;
+}
+
+.dropdown{
+  z-index: 9;
+  top: 62px;
+  right: -15px;
+  position: absolute;
+  background-color: #fff;
+  border: 1px solid #d6d6d6;
 }
 
 .item-dropdown{
@@ -97,14 +146,10 @@
   width: 48px;
   border-radius: 50%;
   background-color: #d4d4d4;
-  margin-bottom: 26px;
-  margin-top: 16px;
  /*  margin-left: 21px; */
 }
 
-.circle-item{
-  margin-left: 21px;
-}
+
 
 .item-dropdown .item-dropdown-text{
   display: flex;
@@ -150,9 +195,6 @@
   color: #ef6c00;
 }
 
-.header-top i{
-  margin-left: 10px;
-}
 /* header-top end */
 
 .shop .circle-item{
@@ -165,25 +207,26 @@
   color: #000000;
 }
 
-.mik-hussy{
+.dropdown-hover.username{
+  margin-left: 22px;
   display: flex;
   align-items: center;
 }
 
-.mik-hussy .circle-item{
+.username .avatar{
   height: 34px;
   width: 34px;
   border-radius: 50%;
   background-color: #d4d4d4;
 }
 
-.mik-hussy .mik-hussy-right{
+.username .username-right{
   display: flex;
   flex-direction: column;
   margin-left: 14px;
 }
 
-.mik-hussy .btn{
+header .btn{
   padding: 10px 20px;
   border-radius: 6px;
   background-color: #e74c3c;
@@ -195,19 +238,19 @@
   margin-left: 30px;
 }
 
-.mik-hussy .btn:hover{
+header .btn:hover{
   background-color: #d4d4d4;
   color: #84b743;
 }
 
-.mik-hussy .mik-hussy-right span{
+.username .username-right span{
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   color: #222222;
   font-size: 14px;
 }
 
-.mik-hussy .mik-hussy-right .mik-hussy-price{
+.username .username-right .username-price{
   font-family: 'Roboto', sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -215,14 +258,14 @@
   margin-top: 5px;
 }
 
-.mik-hussy .angle-down{
+.username .angle-down{
   margin-left: 11px;
   margin-bottom: 20px;
   font-size: 16px;
   color: #707070;
 }
 
-.mik-hussy .item-dropdown-mik-hussy{
+.username .item-dropdown-username{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -235,16 +278,16 @@
   outline: 1px solid #d5d5d5;
 }
 
-.mik-hussy .item-dropdown-mik-hussy .angle-right{
+.username .item-dropdown-username .angle-right{
   font-size: 14px;
   color: #8bc34a;
 }
 
-.mik-hussy .item-dropdown-mik-hussy .angle-right:hover{
+.username .item-dropdown-username .angle-right:hover{
   color: #d4d4d4;
 }
 
-.mik-hussy .item-dropdown-mik-hussy .angle-right span{
+.username .item-dropdown-username .angle-right span{
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -252,16 +295,16 @@
   margin-left: 9px;
 }
 
-.mik-hussy .item-dropdown-mik-hussy .angle-right span:hover{
+.username .item-dropdown-username .angle-right span:hover{
   color: #8bc34a;
 }
 
-.mik-hussy .dropdown .item-dropdown{
+.username .dropdown .item-dropdown{
   width: 155px;
   height: auto;
 }
 
-.item-dropdown-mik-hussy a + a{
+.item-dropdown-username a + a{
   margin-top: 24px;
 }
 
